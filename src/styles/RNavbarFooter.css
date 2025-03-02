@@ -1,0 +1,63 @@
+.registerednavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #03045E;
+    
+}
+
+.registerednavbar_logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.registerednavbar_logo_link {
+    text-decoration: none;
+    color: #CAF0F8;
+    transition: color 0.2s ease-in-out;
+}
+
+.registerednavbar_logo_link:hover {
+    color: #00B4D8;
+}
+
+.registerednavbar_menu {
+    display: flex;
+    gap: 20px;
+}
+
+.registerednavbar_menu_courses_link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #00B4D8;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.registerednavbar_menu_courses_link:hover {
+    background-color: #0077B6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registerednavbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .registerednavbar_menu {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .registerednavbar_menu_courses_link {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
