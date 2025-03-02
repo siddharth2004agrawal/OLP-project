@@ -1,12 +1,18 @@
 import '../styles/CoursesDashboard.css';
 //import { Link } from "react-router-dom";
 import { RegisteredNavbar } from '../components/RegisteredNavbar';
-import { RegisteredFooter } from '../components/RegisteredFooter';
+import { Footer } from '../components/Footer';
 export function Video (){
     return (
         <div className="video">
             <RegisteredNavbar/>
-            <RegisteredFooter/>
+            <iframe 
+            src={new URLSearchParams(window.location.search).get("url")} 
+            title="Course Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            ></iframe>
+            <Footer/>
         </div>
     )
 }

@@ -1,0 +1,49 @@
+.wrap2 {
+    display: flex;
+    justify-content: center;
+}
+.wrap1 {
+    text-align: center;
+}
+
+.wrap1 h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrap1 p{
+    font-size: 16px;
+}
+
+.form input {
+    width: 60%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.signup_link {
+    width: 60%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #03045E;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.form1:hover {
+    background-color: #0077B6;
+}
+.link{
+    margin-top: 50px;
+}

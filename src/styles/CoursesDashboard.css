@@ -1,9 +1,10 @@
 .courses{
-    background-color: #CAF0F8;
+    background-color: white;
 }
 .courses .courses_heading h1{
-    margin: 50px;
-    color: #03045E;
+    margin: 43px;
+    margin-left: 60px;
+    color: black;
 }
 .courses_row {
     display: flex;
@@ -252,4 +253,14 @@
 .courses_row a {
     text-decoration: none;
     color: inherit;
+}
+
+.video iframe {
+    width: 80%;  
+    max-width: 800px;  
+    height: 450px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px #03045E;  
+    display: block;  
+    margin: 46px auto;
 }

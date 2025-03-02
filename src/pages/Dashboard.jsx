@@ -1,6 +1,6 @@
 import '../styles/CoursesDashboard.css';
 import { RegisteredNavbar } from '../components/RegisteredNavbar';
-import { RegisteredFooter } from '../components/RegisteredFooter';
+import { Footer } from '../components/Footer';
 export function Dashboard (){
     return (
         <div className="dashboard">
@@ -8,7 +8,7 @@ export function Dashboard (){
             <div >
                 <h1>Welcome User</h1>             
             </div>
-            <RegisteredFooter/>
+            <Footer/>
         </div>
     )
 }
