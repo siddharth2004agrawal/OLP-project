@@ -5,6 +5,7 @@ import { SignUp } from './pages/SignUp';
 import { Login } from './pages/Login';
 import { Dashboard } from './pages/Dashboard';
 import { Courses } from './pages/Courses';
+import { Video } from './pages/Video';
 
 export function App() {
     return (
@@ -15,6 +16,7 @@ export function App() {
           <Route path='/login' element = {<Login/>}></Route>
           <Route path='/dashboard' element = {<Dashboard/>}></Route>
           <Route path='/courses' element = {<Courses/>}></Route>
+          <Route path='/video' element = {<Video/>}></Route>
         </Routes>
       </Router>
     );
