@@ -7,7 +7,7 @@ export function LandingPage () {
             <Navbar/>
             <div >
                 <h1>Hello!
-                <br></br>This is a Online Leraning Platform, 
+                <br></br>This is a Online Learning Platform, 
                 </h1>
             </div>
             <Footer/>
