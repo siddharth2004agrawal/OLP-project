@@ -1,5 +1,4 @@
 import '../styles/CoursesDashboard.css';
-//import { Link } from "react-router-dom";
 import { RegisteredNavbar } from '../components/RegisteredNavbar';
 import { Footer } from '../components/Footer';
 export function Video (){
