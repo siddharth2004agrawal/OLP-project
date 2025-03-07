@@ -1,21 +1,21 @@
-.wrap2 {
+.signup_body,.login_body {
     display: flex;
     justify-content: center;
 }
-.wrap1 {
+.signup_body_leftside, .login_body_leftside {
     text-align: center;
 }
 
-.wrap1 h1 {
+.signup_body_leftside h1, .login_body_leftside h1 {
     font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.wrap1 p{
+.signup_body_leftside p, .login_body_leftside p{
     font-size: 16px;
 }
 
-.form input {
+.signup_form1 input, .signup_form2 input, .login_form input {
     width: 60%;
     height: 50px;
     padding-left: 10px;
