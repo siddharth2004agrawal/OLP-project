@@ -6,7 +6,8 @@ export function Dashboard (){
         <div className="dashboard">
             <RegisteredNavbar/>
             <div >
-                <h1>Welcome User</h1>             
+                <h1>Welcome User</h1>   
+                <h2>Hello Learners!!!</h2>          
             </div>
             <Footer/>
         </div>
