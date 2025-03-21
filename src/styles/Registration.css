@@ -52,27 +52,111 @@
 .BannerContainer {
     position: relative;
     width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Optional background color */
+}
+
+.slide {
+    position: relative;
+    width: 100%;
     height: auto;
 }
 
-.BannerContainer img {
+.slide img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: auto; /* Ensure the image height adjusts automatically */
+    object-fit: contain; /* Make sure the entire image fits within the container */
+    display: block; /* Ensure it doesn't overflow */
 }
 
 .BannerText {
     position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: black; 
-    background-color: #90E0EF; 
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 20px;
+    top: 30%; /* Position vertically 30% from the top */
+    left: 5%; /* Add margin of 30% from the left */
+    color: black; /* Text color */
+    text-align: left; /* Align text to the left */
+    background-color: white; /* Semi-transparent background for readability */
+    padding: 30px; /* Increase padding for larger text box */
+    border-radius: 10px;
+    width: 30%; /* Increase box width */
+    animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in animation */
 }
+
+.BannerText h1 {
+    font-size: 2.5rem; /* Increase font size for heading */
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.BannerText p {
+    font-size: 1.2rem; /* Increase font size for description */
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .BannerText {
+        width: 80%; /* Adjust for smaller screens */
+        left: 10%; /* Further alignment for mobile */
+        font-size: 1rem; /* Reduce font size for mobile devices */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .BannerText h1 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+
+    .BannerText p {
+        font-size: 1rem; /* Adjust description size for mobile */
+    }
+}
+
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Simple semi-transparent background */
+    border: none;
+    color: #fff; /* White arrow color */
+    font-size: 2.5rem; /* Adjust font size for balance */
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height */
+    display: flex; /* Center content inside the circle */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%; /* Perfectly circular shape */
+}
+
+
+.arrow:hover {
+    background-color: #00B4D8; /* Darken on hover for better visibility */
+}
+
+.arrow.left {
+    left: 10px; 
+}
+
+.arrow.right {
+    right: 10px; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .mid h2{
     font-size: 50.5778px;
     font-weight: 700;
@@ -94,13 +178,11 @@
 }
 .subcontent{
     padding: 15px;
-    background-color: #CAF0F8; 
+    border: 0.5px solid ;
+    background-color:#CAF0F8;
     border-radius: 8px;
     margin: 30px;
-    box-sizing: border-box;
-    color: rgb(48, 49, 65)
-   
-    
+    box-sizing: border-box;   
 }
 
 .subcontent img{
@@ -112,28 +194,23 @@
     font-weight: 700;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
+   color: blue;
     
 }
 .subcontent p{
     font-weight: 500;
     font-size: 19px;
     font-family:'Times New Roman', Times, serif;
-    /* padding-left: 30px; */
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 2px;
-
-   
+   color: #00B4D8;
 }
 .subcontent:hover {
-    background-color: #0077B6; /* Change background color on hover */
     transform: scale(1.05); /* Slightly enlarge the box */
     box-shadow: 0 4px 8px #CAF0F8; /* Add a shadow for a 3D effect */
-    transition: all 0.3s ease-in-out; /* Smooth transition effect */
-  
-    
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */   
 }
 
 .goal {
@@ -188,7 +265,7 @@
     color: #333; 
 }
 
-.box a {
+.box button {
     text-decoration: none; /* Remove underline */
     font-weight: 600; /* Emphasize links */
     color: #0077B6; /* Consistent brand color */
@@ -200,9 +277,18 @@
     transition: all 0.3s ease-in-out; /* Smooth animation */
 }
 
-.box a:hover {
-    background-color: #0077B6; 
-    color: white; 
-    text-decoration: none; 
-    
+.box button:hover {
+    background-color: lightblue; 
+}
+
+.box-button.active {
+    background-color: #4caf50; /* Active background */
+    color: #fff; /* Active text color */
+}
+.Guide{
+    display: flex;
+}
+.imgContainer img{
+    height: 98%;
+    width: 105%;
 }
